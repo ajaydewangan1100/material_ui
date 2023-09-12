@@ -15,18 +15,18 @@ export const MuiTypography = () => {
       <Typography variant="subtitle1">Sub Title 1</Typography>
       <Typography variant="subtitle2">Sub Title 2 </Typography>
 
-      {/* 2 variants for body text- can use for paragraph texts */}
+      {/* 2 variants for body text - can use for paragraph texts */}
       <Typography variant="body1">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-        dolor?{" "}
+        dolor?
       </Typography>
       <Typography variant="body2">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam
         debitis amet tempore? At laudantium totam officiis obcaecati quidem
-        laboriosam.{" "}
+        laboriosam.
       </Typography>
 
-      {/* can give component as props for semantics */}
+      {/* can give component as props for semantics - all properties like h4 but it will be h1 */}
       <Typography variant="h4" component="h1">
         h4 Tag but showing as h1 - because of component='h1' props
       </Typography>

@@ -1,3 +1,204 @@
+# Material UI - Code Evolution
+
+## Typography - (variants -)
+
+- h1 - `<Typography variant="h1">H1 Heading </Typography>`
+- h2 - `<Typography variant="h2">H2 Heading </Typography>`
+- h3 - `<Typography variant="h3">H3 Heading </Typography>`
+- h4 - `<Typography variant="h4">H4 Heading </Typography>`
+- h5 - `<Typography variant="h5">H5 Heading </Typography>`
+- h6 - `<Typography variant="h6">H6 Heading </Typography>`
+-
+
+### 2 variants of h6 -
+
+- subtitle1 - `<Typography variant="subtitle1">Sub Title 1</Typography>`
+- subtitle2 - `<Typography variant="subtitle2">Sub Title 2 </Typography>`
+
+### 2 variants for body text - body1 & body2
+
+- `<Typography variant="body1">Lorem20...</Typography>`
+- `<Typography variant="body2">Lorem25...</Typography>`
+
+### component as props for semantics -
+
+> we can give any component as props - (in example - all properties like h4 but it will be h1)
+
+```
+<Typography variant="h4" component="h1">
+    h4 Tag but showing as h1 - because of component='h1' props
+</Typography>
+```
+
+### gutterBottom - (bottom margin - it can adjust according to heading size)
+
+```
+<Typography variant="h4" component="h1" gutterBottom>
+    gutterBottom - h4 as h1 - because of component='h1' props
+</Typography>
+```
+
+## Button - (variants - )
+
+- text - `<Button variant="text">Text</Button>`
+- contained - `<Button variant="contained">Contained</Button>`
+- outlined - `<Button variant="outlined">Outlined</Button>`
+
+### stack (component for making gap - )
+
+```
+<Stack spacing={2} direction="row">
+    <Button variant="text">Text</Button>
+    <Button variant="contained">Contained</Button>
+    <Button variant="outlined">Outlined</Button>
+</Stack>
+```
+
+### Button colors - (default - 6)
+
+> goto - *https://mui.com/material-ui/customization/palette/*
+
+- primary - for primary interface elements.
+- secondary - for secondary interface elements.
+- error - for elements that the user should be made aware of.
+- warning - for potentially dangerous actions or important messages.
+- info - for highlighting neutral information.
+- success - for indicating the successful completion of an action that the user triggered.
+
+> example - `<Button variant="contained" color="primary">Primary</Button>`
+
+### Button size - (3 options )
+
+- small - `<Button variant="contained" size="small">Small</Button>`
+- medium - `<Button variant="contained" size="medium">Medium</Button>`
+- large - `<Button variant="contained" size="large">Large</Button>`
+
+### MUI/icons - (install it first and import) -
+
+> goto - `https://mui.com/material-ui/icons/`
+
+#### Icons with button - (2 variants - startIcon & endIcon)
+
+- startIcon - `<Button variant="contained" startIcon={<SendIcon />}>Send</Button>`
+- endIcon - `<Button variant="contained" endIcon={<SendIcon />}>Send</Button>`
+
+#### Icon without text (freely use like this - we can also give color and size props) -
+
+> import IconButton
+
+```
+<IconButton aria-label="send" color="success" size="large">
+    <SendIcon />
+</IconButton>
+```
+
+_Note - aria-label is for accessibility reason_
+_Can give color size according to you_
+
+#### disabling elevation - (_disableElevation_ - shadow not show on hover - with contained variant) -
+
+```
+<Button variant="contained" endIcon={<SendIcon />} disableElevation>
+    Send - disableElevation
+</Button>
+```
+
+#### disabling ripple - (disableRipple - riple not show [effect on click] - with contained variant) -
+
+```
+<Button variant="contained" startIcon={<SendIcon />} disableRipple>
+    Send - disbaleRipple
+</Button>
+```
+
+#### onclick feature - (same as button) -
+
+```
+<Button
+    variant="contained"
+    color="secondary"
+    onClick={() => alert("Onclick sample button")}
+>
+    Onclick sample button
+</Button>
+```
+
+### ButtonGroup - Button related component - (put button under it and give variants to this) -
+
+**Properties we can give -**
+
+- variant - `variant="contained"` - text, contained, outlined
+- size - `size="small"` - small, medium, large
+- color - `color="secondary"`
+- orientation - `orientation="vertical"`
+- aria-label - `alignment button group` - (just for accessibility)
+
+> _note_ - onclick we need to give to everybutton
+
+```
+<ButtonGroup
+    variant="contained"
+    size="small"
+    color="secondary"
+    orientation="vertical"
+    aria-label="alignment button group"
+>
+    <Button onClick={() => alert("left Clicked")}>Left</Button>
+    <Button>Center</Button>
+    <Button>Right</Button>
+</ButtonGroup>
+```
+
+### ToggleButton & TogglButtonGroup -
+
+**props we can pass -**
+
+- aria-label="text formatting"
+- value={formats}
+- onChange={handleFormatChange}
+- size="small"
+- color="secondary"
+- orientation="row"
+
+```
+<ToggleButtonGroup
+    aria-label="text formatting"
+    value={formats}
+    onChange={handleFormatChange}
+    size="small"
+    color="secondary"
+    orientation="vertical"
+>
+    <ToggleButton value="bold" aria-label="bold">
+    <FormatBoldIcon />{" "}
+    </ToggleButton>
+    <ToggleButton value="italic" aria-label="italic">
+    <FormatItalicIcon />{" "}
+    </ToggleButton>
+    <ToggleButton value="underlined" aria-label="underlined">
+    <FormatUnderlinedIcon />{" "}
+    </ToggleButton>
+</ToggleButtonGroup>
+```
+
+> _note_ - created state (formats) and method (handleFormatChange) and used
+
+> **exclusive** - if we want only one element selectable at a time
+> _but for exclusive we need to chnage state type as - string | null_
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
