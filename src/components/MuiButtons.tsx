@@ -154,13 +154,13 @@ export const MuiButtons = () => {
           orientation="vertical"
         >
           <ToggleButton value="bold" aria-label="bold">
-            <FormatBoldIcon />{" "}
+            <FormatBoldIcon />
           </ToggleButton>
           <ToggleButton value="italic" aria-label="italic">
-            <FormatItalicIcon />{" "}
+            <FormatItalicIcon />
           </ToggleButton>
           <ToggleButton value="underlined" aria-label="underlined">
-            <FormatUnderlinedIcon />{" "}
+            <FormatUnderlinedIcon />
           </ToggleButton>
         </ToggleButtonGroup>
       </Stack>

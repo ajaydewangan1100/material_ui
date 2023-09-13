@@ -155,7 +155,7 @@ _Can give color size according to you_
 
 - aria-label="text formatting"
 - value={formats}
-- onChange={handleFormatChange}
+- onChange= (event listener and handler)
 - size="small"
 - color="secondary"
 - orientation="row"
@@ -170,13 +170,13 @@ _Can give color size according to you_
     orientation="vertical"
 >
     <ToggleButton value="bold" aria-label="bold">
-    <FormatBoldIcon />{" "}
+    <FormatBoldIcon />
     </ToggleButton>
     <ToggleButton value="italic" aria-label="italic">
-    <FormatItalicIcon />{" "}
+    <FormatItalicIcon />
     </ToggleButton>
     <ToggleButton value="underlined" aria-label="underlined">
-    <FormatUnderlinedIcon />{" "}
+    <FormatUnderlinedIcon />
     </ToggleButton>
 </ToggleButtonGroup>
 ```
@@ -186,9 +186,63 @@ _Can give color size according to you_
 > **exclusive** - if we want only one element selectable at a time
 > _but for exclusive we need to chnage state type as - string | null_
 
+### text field - video - 7
+
+**Properties we can give -**
+
+- variant - (outlined/filled/standard)
+- label - (labelled text)
+- size - (small/medium/large)
+- color - (can give default themes)
+- required - (for required input field)
+- helperText - (show texts below input field like - do not share password)
+- type - (we can make password type it show star inplace of text)
+- disabled - (dsabled input field)
+
+> go to - [MuiTextField.tsx - for all things](src/components/MuiTextField.tsx)
+
+### Select - video 8
+
+> **Box** - _same as div tag - we can give width and height just added for good looking_
+
+- **2 methods to use select** - via textField and direct select component given by mui
+
+**Properties we can give -**
+
+- label
+- select - (making it select dropdown)
+- fullwidth - (full width according to parent)
+- SelectProps - (similar to InputProps) (give multiple true to selct multiple)
+  `SelectProps = {{multiple: true}}`
+- size="small"
+- color="secondary"
+- helperText="Select your country"
+- error
+
+```
+<TextField
+    label="Select Countries"
+    select
+    value={countries}
+    onChange={handleMultipleChange}
+    fullWidth
+    SelectProps={{
+    multiple: true,
+    }}
+    size="small"
+    color="secondary"
+    helperText="Select your country"
+    error
+>
+    <MenuItem value="IN">India</MenuItem>
+    <MenuItem value="US">USA</MenuItem>
+    <MenuItem value="Au">Australia</MenuItem>
+</TextField>
+```
+
 -
 -
--
+
 -
 -
 -
