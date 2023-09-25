@@ -4,6 +4,9 @@ import { MuiButtons } from "./components/MuiButtons";
 import { Container } from "@mui/material";
 import { MuiTextField } from "./components/MuiTextField";
 import { MuiSelect } from "./components/MuiSelect";
+// import css
+import "./App.css";
+import { MuiRadioButton } from "./components/MuiRadioButton";
 
 function App() {
   return (
@@ -22,6 +25,10 @@ function App() {
 
       {/* Select component - video 8 */}
       <MuiSelect />
+      <hr />
+
+      {/* Radio Button - video 9 */}
+      <MuiRadioButton />
       <hr />
     </Container>
   );

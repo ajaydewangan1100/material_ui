@@ -1,6 +1,6 @@
 # Material UI - Code Evolution
 
-## Typography - (variants -)
+## Typography - (variants -) - v3
 
 - h1 - `<Typography variant="h1">H1 Heading </Typography>`
 - h2 - `<Typography variant="h2">H2 Heading </Typography>`
@@ -38,7 +38,7 @@
 </Typography>
 ```
 
-## Button - (variants - )
+## Button - (variants - ) - v4
 
 - text - `<Button variant="text">Text</Button>`
 - contained - `<Button variant="contained">Contained</Button>`
@@ -123,7 +123,7 @@ _Can give color size according to you_
 </Button>
 ```
 
-### ButtonGroup - Button related component - (put button under it and give variants to this) -
+### ButtonGroup - Button related component - (put button under it and give variants to this) - v5
 
 **Properties we can give -**
 
@@ -149,7 +149,7 @@ _Can give color size according to you_
 </ButtonGroup>
 ```
 
-### ToggleButton & TogglButtonGroup -
+### ToggleButton & TogglButtonGroup - v6
 
 **props we can pass -**
 
@@ -158,7 +158,7 @@ _Can give color size according to you_
 - onChange= (event listener and handler)
 - size="small"
 - color="secondary"
-- orientation="row"
+- orientation="vertical | horizontal"
 
 ```
 <ToggleButtonGroup
@@ -186,7 +186,7 @@ _Can give color size according to you_
 > **exclusive** - if we want only one element selectable at a time
 > _but for exclusive we need to chnage state type as - string | null_
 
-### text field - video - 7
+### text field - v7
 
 **Properties we can give -**
 
@@ -239,6 +239,34 @@ _Can give color size according to you_
     <MenuItem value="Au">Australia</MenuItem>
 </TextField>
 ```
+
+### Radio Button - video 9
+
+**things we need to use**
+
+- FormControl - (Eery thing wrapes under it) - (props) ->
+
+  1. error
+
+- FormLabel - (label of form) - (props ) ->
+
+  1.  id="Labeled" - (can use it as label)
+
+- FormControlLabel - (Label of radio to control) - (props) ->
+
+  1.  control={<Radio size="small" color="secondary" />}
+  2.  label="0-2"
+  3.  value="0-2"
+
+- RadioGroup - (All option under it) - (props) ->
+
+  1.  name="job-experience-group"
+  2.  aria-labelledby="job-experience-group-label"
+  3.  value={value}
+  4.  onChange={handleChange}
+  5.  row
+
+- Radio - (give as props - so it will behave as radio)
 
 -
 -

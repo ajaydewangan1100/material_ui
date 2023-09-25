@@ -14,8 +14,10 @@ import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
 import { useState } from "react";
 
 export const MuiButtons = () => {
+  // state for togglebutton
   const [formats, setFormats] = useState<string[]>([]);
   console.log("1", { formats });
+  // function for toggle button
   const handleFormatChange = (
     _event: React.MouseEvent<HTMLElement>,
     updatedFormats: string[]
@@ -130,12 +132,14 @@ export const MuiButtons = () => {
           <Button>Center</Button>
           <Button>Right</Button>
         </ButtonGroup>
+
         {/* second group */}
         <ButtonGroup variant="text" size="small" color="success">
           <Button>Left</Button>
           <Button onClick={() => alert("Center Clicked")}>Center</Button>
           <Button>Right</Button>
         </ButtonGroup>
+
         {/* third group */}
         <ButtonGroup variant="outlined" size="medium" color="primary">
           <Button>Left</Button>
@@ -143,7 +147,9 @@ export const MuiButtons = () => {
           <Button onClick={() => alert("Right Clicked")}>Right</Button>
         </ButtonGroup>
       </Stack>
+
       {/* ToggleButton & TogglButtonGroup  - video - 6 */}
+      {/* for select multiple */}
       <Stack direction="row">
         <ToggleButtonGroup
           aria-label="text formatting"
@@ -163,6 +169,7 @@ export const MuiButtons = () => {
             <FormatUnderlinedIcon />
           </ToggleButton>
         </ToggleButtonGroup>
+        {/* for select only one at a time we canuse - exclusive */}
       </Stack>
     </Stack>
   );

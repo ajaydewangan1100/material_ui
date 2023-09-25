@@ -14,7 +14,7 @@ export const MuiTextField = () => {
         <TextField label="small secondary" size="small" color="secondary" />
       </Stack>
       <Stack direction="row" spacing={2}>
-        <TextField label="Form input" required />
+        <TextField label="Form  " required />
         <TextField label="Form input" helperText="Do not share password" />
         <TextField label="Password" type="password" />
       </Stack>
@@ -45,7 +45,7 @@ export const MuiTextField = () => {
       </Stack>
       {/* error and conditional error helper text */}
       <Stack direction="row" spacing={2}>
-        <TextField label="Error input" error required />
+        <TextField label="Error and required input" error required />
         <TextField
           label="Conditional helperText"
           aria-required

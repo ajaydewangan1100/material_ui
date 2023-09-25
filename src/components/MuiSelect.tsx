@@ -43,8 +43,8 @@ export const MuiSelect = () => {
           }}
           size="small"
           color="secondary"
-          helperText="Select your country"
-          error
+          helperText="Select atleast one option"
+          error={!countries.length}
         >
           <MenuItem value="IN">India</MenuItem>
           <MenuItem value="US">USA</MenuItem>
