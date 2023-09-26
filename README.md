@@ -325,6 +325,23 @@ _Can give color size according to you_
 />
 ```
 
+### Swtich - video 11
+
+> [goto - src/components/MuiSwitch.tsx](src/components/MuiSwitch.tsx)
+
+```
+<FormControlLabel
+    label="dark mode"
+    control={<Switch checked={checked} onChange={handleChange} size="small" color="success" />}
+/>
+```
+
+### Rating - video 12 -
+
+> [goto - src/components/MuiRating.tsx](src/components/MuiRating.tsx)
+
+
+
 -
 -
 

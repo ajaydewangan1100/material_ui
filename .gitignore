@@ -11,6 +11,8 @@
 # production
 /build
 
+src/components/MuiRating.tsx
+
 # misc
 .DS_Store
 .env.local

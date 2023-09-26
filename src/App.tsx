@@ -8,6 +8,8 @@ import { MuiSelect } from "./components/MuiSelect";
 import "./App.css";
 import { MuiRadioButton } from "./components/MuiRadioButton";
 import { MuiCheckbox } from "./components/MuiCheckbox";
+import { MuiSwitch } from "./components/MuiSwitch";
+import { MuiRating } from "./components/MuiRating";
 
 function App() {
   return (
@@ -34,6 +36,14 @@ function App() {
 
       {/* Checkbox - video 10 */}
       <MuiCheckbox />
+      <hr />
+
+      {/* switch - video 11 */}
+      <MuiSwitch />
+      <hr />
+
+      {/* Rating - video 12 */}
+      <MuiRating />
       <hr />
     </Container>
   );
