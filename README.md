@@ -40,6 +40,8 @@
 
 ## Button - (variants - ) - v4
 
+> [goto - src/components/MuiButtons.tsx](src/components/MuiButtons.tsx)
+
 - text - `<Button variant="text">Text</Button>`
 - contained - `<Button variant="contained">Contained</Button>`
 - outlined - `<Button variant="outlined">Outlined</Button>`
@@ -188,6 +190,8 @@ _Can give color size according to you_
 
 ### text field - v7
 
+> [goto - src/components/MuiTextField.tsx](src/components/MuiTextField.tsx)
+
 **Properties we can give -**
 
 - variant - (outlined/filled/standard)
@@ -202,6 +206,8 @@ _Can give color size according to you_
 > go to - [MuiTextField.tsx - for all things](src/components/MuiTextField.tsx)
 
 ### Select - video 8
+
+> [goto - src/components/MuiSelect.tsx](src/components/MuiSelect.tsx)
 
 > **Box** - _same as div tag - we can give width and height just added for good looking_
 
@@ -242,6 +248,8 @@ _Can give color size according to you_
 
 ### Radio Button - video 9
 
+> [goto - src/components/MuiRadioButton.tsx](src/components/MuiRadioButton.tsx)
+
 **things we need to use**
 
 - FormControl - (Eery thing wrapes under it) - (props) ->
@@ -266,7 +274,56 @@ _Can give color size according to you_
   4.  onChange={handleChange}
   5.  row
 
-- Radio - (give as props - so it will behave as radio)
+- Radio - (give as props - so it will behave as radio) - (usage) ->
+
+```
+<FormControlLabel
+    control={<Radio color="primary" />}
+    label="6-10"
+    value="6-10"
+/>
+```
+
+- FormHelperText - (Same as helperText, but use as element ) ->
+
+```
+<FormHelperText>Invalid selection</FormHelperText>
+```
+
+### checkbox - video 10
+
+> [goto - src/components/MuiCheckbox.tsx](src/components/MuiCheckbox.tsx)
+
+**things we need to use**
+
+- FormControlLabel - (wrap the things under it) - (props) ->
+
+  1. label
+  2. control - `control={<Checkbox checked={acceptTnC} onChange={handleChange} />}`
+
+- Checkbox - (same as checkbox) - (props) ->
+
+  1. FormControlLabel,
+  2. Checkbox - (use same as checkbox)
+  3. FormControl - (use when multiple checkbox)
+  4. FormLabel - (label for checkbox)
+  5. FormGroup - (group all checkbox)
+  6. FormHelperText - (same as helper text)
+
+```
+<FormControlLabel
+    label="I accept terms and conditions"
+    control={
+    <Checkbox
+        checked={acceptTnC}
+        onChange={handleChange}
+        size="small"
+        color="secondary"
+        required
+    />
+    }
+/>
+```
 
 -
 -
@@ -327,3 +384,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+```
+
+```

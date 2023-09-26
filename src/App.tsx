@@ -7,6 +7,7 @@ import { MuiSelect } from "./components/MuiSelect";
 // import css
 import "./App.css";
 import { MuiRadioButton } from "./components/MuiRadioButton";
+import { MuiCheckbox } from "./components/MuiCheckbox";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
 
       {/* Radio Button - video 9 */}
       <MuiRadioButton />
+      <hr />
+
+      {/* Checkbox - video 10 */}
+      <MuiCheckbox />
       <hr />
     </Container>
   );
