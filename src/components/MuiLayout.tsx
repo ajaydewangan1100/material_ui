@@ -1,8 +1,13 @@
-import { Box } from "@mui/material";
+import { Box, Stack, Divider } from "@mui/material";
 
 export const MuiLayout = () => {
   return (
-    <>
+    <Stack
+      sx={{ border: "1px solid", width: "80%" }}
+      direction="row-reverse"
+      spacing={2}
+      divider={<Divider orientation="vertical" flexItem />}
+    >
       {/* Box with normal css things given by - sx */}
       <Box
         sx={{
@@ -31,6 +36,6 @@ export const MuiLayout = () => {
       >
         css directly used - Box
       </Box>
-    </>
+    </Stack>
   );
 };

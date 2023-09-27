@@ -381,7 +381,9 @@ _Can give color size according to you_
 />
 ```
 
-### Box - Layout Comp - video 14
+### Layout Comp -
+
+#### Box (Layout Comp) - video 14
 
 - > [goto - src/components/MuiLayout.tsx](src/components/MuiLayout.tsx)
 
@@ -433,9 +435,36 @@ css directly used - Box
 
 _can find all things under same place_
 
-### 
+#### Stack (Layout Comp) - video 15 -
 
--
+_Stack is used to manage layout in one dimension - vertical or horizontal - (default - collumn)_
+
+**props we can use-**
+
+- sx={{ border: "1px solid", width: "80%" }} - (sx - common css things)
+- direction="row-reverse" - (direction of flex)
+- spacing={2} - (spacing between childs)
+- divider - (Divider component)
+
+**Divider props-**
+
+- orientation="vertical" - (for defining which side)
+- flexItem - (booleean - telling that divider is flexitem)
+
+```
+<Stack
+    sx={{ border: "1px solid", width: "80%" }}
+    direction="row-reverse"
+    spacing={2}
+    divider={<Divider orientation="vertical" flexItem />}
+>
+<Box>Box1</Box>
+<Box>Box2</Box>
+</Stack>
+```
+
+
+
 
 -
 -
