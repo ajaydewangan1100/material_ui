@@ -12,6 +12,7 @@ import { MuiSwitch } from "./components/MuiSwitch";
 import { MuiRating } from "./components/MuiRating";
 import { MuiAutocomplete } from "./components/MuiAutocomplete";
 import { MuiLayout } from "./components/MuiLayout";
+import { MuiCards } from "./components/MuiCards";
 
 function App() {
   return (
@@ -52,8 +53,12 @@ function App() {
       <MuiAutocomplete />
       <hr />
 
-      {/* Layout component - video 14 */}
+      {/* Layout component - video 14 - 17 */}
       <MuiLayout />
+      <hr />
+
+      {/* Card component - video 18 */}
+      <MuiCards />
       <hr />
     </Container>
   );
