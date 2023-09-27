@@ -11,6 +11,7 @@ import { MuiCheckbox } from "./components/MuiCheckbox";
 import { MuiSwitch } from "./components/MuiSwitch";
 import { MuiRating } from "./components/MuiRating";
 import { MuiAutocomplete } from "./components/MuiAutocomplete";
+import { MuiLayout } from "./components/MuiLayout";
 
 function App() {
   return (
@@ -48,7 +49,11 @@ function App() {
       <hr />
 
       {/* Autocomplete - video 13 */}
-      <MuiAutocomplete /> 
+      <MuiAutocomplete />
+      <hr />
+
+      {/* Layout component - video 14 */}
+      <MuiLayout />
       <hr />
     </Container>
   );

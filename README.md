@@ -381,9 +381,60 @@ _Can give color size according to you_
 />
 ```
 
+### Box - Layout Comp - video 14
+
+- > [goto - src/components/MuiLayout.tsx](src/components/MuiLayout.tsx)
+
+**props we can give-**
+
+1. component="span" - (can give any component, box will become that component)
+2. sx - (it is an object, where we can give all css properties)
+
+```
+<Box
+    sx={{
+    backgroundColor: "primary.main",
+    color: "white",
+    width: "200px",
+    height: "150px",
+    padding: "14px",
+    "&:hover": {
+        backgroundColor: "primary.light",
+    },
+    }}
+>
+    Mui Layout component - Box
+</Box>
+```
+
+_We can use system properties with - Box (means we can use alot of css properties as a props directly)_
+_can also use shorthand for that css properties(shorthand is given by materialUI)_
+
+```
+<Box
+    display="flex"
+    height="150px"
+    width="150px"
+    bgcolor="success.light"
+    m="50px"
+    color="error.dark"
+>
+css directly used - Box
+</Box>
+```
+
+#### Use full propeties table for box -
+
+- > [goto - web - propeties table](https://mui.com/system/properties/#properties-reference-table)
+- > [goto - border](https://mui.com/system/borders/)
+- > [goto - display](https://mui.com/system/display/)
+- > [goto - flexbox](https://mui.com/system/flexbox/)
+- > [goto - sizing](https://mui.com/system/sizing/)
+
+_can find all things under same place_
+
 ### 
 
--
 -
 
 -
