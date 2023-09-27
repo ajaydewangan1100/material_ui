@@ -1,8 +1,9 @@
-import { Box, Stack, Divider, Grid } from "@mui/material";
+import { Box, Stack, Divider, Grid, Paper } from "@mui/material";
 
 export const MuiLayout = () => {
   return (
-    <>
+    // Paper component - video 17
+    <Paper sx={{ padding: "32px", margin: "25px" }} elevation={16}>
       <Stack
         sx={{ border: "1px solid", width: "80%" }}
         direction="row-reverse"
@@ -61,6 +62,6 @@ export const MuiLayout = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Paper>
   );
 };

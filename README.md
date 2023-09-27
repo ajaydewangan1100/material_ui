@@ -505,6 +505,19 @@ _usefull when creating 2-dimensional responsive layout_
     </Grid>
 ```
 
+#### Paper - (surface layout related component) - video 17 -
+
+**Props we can use -**
+
+- sx - (for css)
+- elevation - (for shadow )
+
+```
+<Paper sx={{ padding: "32px", margin: "25px" }} elevation={16}>
+    <Stack>Things between</Stack>
+    <Box>Things between</Box>
+</Paper>
+```
 
 -
 -
