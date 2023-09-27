@@ -463,7 +463,47 @@ _Stack is used to manage layout in one dimension - vertical or horizontal - (def
 </Stack>
 ```
 
+#### Grid - (Layout Comp) - video 16 -
 
+_usefull when creating 2-dimensional responsive layout_
+
+##### 2 variations -
+
+1. Grid container - for parent - (container devides into 12 collumns based on that we can give width according to screen) (props ) -
+
+   - container - (behave as a container)
+   - spacing={2} - (multiple of 8px)
+   - rowSpacing-{4} - (multiple of 8px)
+   - columnSpacing-{3} - (multiple of 8px)
+
+2. grid item - for children - (props) -
+   - item - (behave as a item)
+   - xs | sm | md | lg | xl = "auto" | {1-12} (give any value according to screen size ) (screen sizes)
+
+```
+<Grid container my={4} p={1} rowSpacing={3} columnSpacing={4}>
+    <Grid item xs="auto" md={6}>
+        <Box bgcolor="primary.light" p={2}>
+        Item 1
+        </Box>
+    </Grid>
+    <Grid item xs={12} md={4}>
+        <Box bgcolor="primary.light" p={2}>
+        Item 2
+        </Box>
+    </Grid>
+    <Grid item xs={12} md={4}>
+        <Box bgcolor="primary.light" p={2}>
+        Item 3
+        </Box>
+    </Grid>
+    <Grid item xs={12} md={6}>
+        <Box bgcolor="primary.light" p={2}>
+        Item 4
+        </Box>
+    </Grid>
+    </Grid>
+```
 
 
 -
