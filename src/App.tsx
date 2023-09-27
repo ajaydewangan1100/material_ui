@@ -10,6 +10,7 @@ import { MuiRadioButton } from "./components/MuiRadioButton";
 import { MuiCheckbox } from "./components/MuiCheckbox";
 import { MuiSwitch } from "./components/MuiSwitch";
 import { MuiRating } from "./components/MuiRating";
+import { MuiAutocomplete } from "./components/MuiAutocomplete";
 
 function App() {
   return (
@@ -44,6 +45,10 @@ function App() {
 
       {/* Rating - video 12 */}
       <MuiRating />
+      <hr />
+
+      {/* Autocomplete - video 13 */}
+      <MuiAutocomplete /> 
       <hr />
     </Container>
   );

@@ -340,7 +340,48 @@ _Can give color size according to you_
 
 > [goto - src/components/MuiRating.tsx](src/components/MuiRating.tsx)
 
+**props we can give**
 
+- precision={0.5} (devided value)
+- size="large | medium | small"
+- highlightSelectedOnly - (hightlight only one)
+- readonly (not clickable)
+- emptyIcon={<FavoriteBorderIcon fontSize="inherit" />} - (can use different icon)
+- icon={<FavoriteIcon fontSize="inherit" color="error" />} - (can use different icon)
+
+```
+<Rating
+    value={value}
+    onChange={handleChange}
+    precision={0.5}
+    size="large"
+    highlightSelectedOnly
+    emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+    icon={<FavoriteIcon fontSize="inherit" color="error" />}
+/>
+```
+
+### Autocmplete - video 13
+
+> [goto - src/components/MuiAutocomplete.tsx](src/components/MuiAutocomplete.tsx)
+
+- options={skills} - (array of options)
+- renderInput={(params) => <TextField {...params} label="skills" />} - (textfield rendering)
+- value={value} - (useState variable value)
+- onChange={(event: any, newValue: string | null) => setValue(newValue)} - (handlechange)
+- freeSolo - (boolean - for entering new option)
+
+```
+<Autocomplete
+    options={skills}
+    renderInput={(params) => <TextField {...params} label="skills" />}
+    value={value}
+    onChange={(event: any, newValue: string | null) => setValue(newValue)}
+    freeSolo
+/>
+```
+
+### 
 
 -
 -
