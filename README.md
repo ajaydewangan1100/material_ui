@@ -560,9 +560,11 @@ _usefull when creating 2-dimensional responsive layout_
 </Box>
 ```
 
-### Accordian - (for show and hide sections of page & can contain any content) - video 19
+#### Accordian - (for show and hide sections of page & can contain any content) - video 19
 
-**Components we need in Accordion-**
+> [goto - src/components/MuiAccordian.tsx](src/components/MuiAccordian.tsx)
+
+> **Components we need in Accordion-**
 
 1. Accordion - (for grouping) - (props-)
 
@@ -598,15 +600,46 @@ _usefull when creating 2-dimensional responsive layout_
 </Accordion>
 ```
 
--
--
--
--
--
--
--
--
--
+#### Imagelist - video 20 -
+
+> [goto - src/components/MuiImageList.tsx](src/components/MuiImageList.tsx)
+
+**Used to display collection of images in an organized grid**
+
+**Variants** - normal, woven, masonry
+
+_Components_ -
+
+1. ImageList - (Wrap all images) - (props)
+
+   - variant - "normal, woven, masonry" - (for give variant)
+   - sx - (css)
+   - cols - (collumn sount)
+   - gap - (gap between items) - (in woven and masonry variant)
+   - rowHeight - (in normal variant)
+
+2. ImageListItem - (Listing elements wrapper) - (wrap `<img />` under it) - (props)
+
+   - onClickCapture={() => alert(item.title)} - (can give method on click)
+
+3. ImageListItemBar - (Bar to show something) - (props)
+   - title - (if we want to show)
+   - subtitle - (subtitle of title)
+   - position - (top | bottom | below )
+   - onClickCapture={() => alert(item.title)} - (can give method on click)
+   - sx - (css)
+
+- -
+
+*
+*
+*
+*
+*
+*
+*
+*
+*
 
 # Getting Started with Create React App
 

@@ -14,6 +14,7 @@ import { MuiAutocomplete } from "./components/MuiAutocomplete";
 import { MuiLayout } from "./components/MuiLayout";
 import { MuiCards } from "./components/MuiCards";
 import { MuiAccordian } from "./components/MuiAccordian";
+import { MuiImageList } from "./components/MuiImageList";
 
 function App() {
   return (
@@ -64,6 +65,10 @@ function App() {
 
       {/* Accordian - (show & hide) - video 19 */}
       <MuiAccordian />
+      <hr />
+
+      {/* ImageList - video 20 */}
+      <MuiImageList />
       <hr />
     </Container>
   );
