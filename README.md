@@ -560,6 +560,44 @@ _usefull when creating 2-dimensional responsive layout_
 </Box>
 ```
 
+### Accordian - (for show and hide sections of page & can contain any content) - video 19
+
+**Components we need in Accordion-**
+
+1. Accordion - (for grouping) - (props-)
+
+   - expanded={expanded === "panel1"}
+   - onChange
+
+2. AccordionDetails - (accorddion details of topic)
+3. AccordionSummary - (Summary of topic) - (props) -
+
+   - id="panel1-header" - (for targetting)
+   - aria-controls="panel1-content" - (for controls)
+   - expandIcon={<ExpandMoreIcon />} - (icon we can give)
+
+```
+<Accordion
+    expanded={expanded === "panel1"}
+    onChange={(_event, isExapnded) => handleChange(isExapnded, "panel1")}
+    >
+    <AccordionSummary
+        id="panel1-header"
+        aria-controls="panel1-content"
+        expandIcon={<ExpandMoreIcon />}
+    >
+        <Typography>Accordion 1</Typography>
+    </AccordionSummary>
+    <AccordionDetails>
+        <Typography>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+        voluptates dolores eius expedita omnis inventore officia nulla quae
+        repudiandae temporibus.
+        </Typography>
+    </AccordionDetails>
+</Accordion>
+```
+
 -
 -
 -

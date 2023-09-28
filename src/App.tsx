@@ -1,11 +1,11 @@
 import React from "react";
+// import css
+import "./App.css";
 import { MuiTypography } from "./components/MuiTypography";
 import { MuiButtons } from "./components/MuiButtons";
 import { Container } from "@mui/material";
 import { MuiTextField } from "./components/MuiTextField";
 import { MuiSelect } from "./components/MuiSelect";
-// import css
-import "./App.css";
 import { MuiRadioButton } from "./components/MuiRadioButton";
 import { MuiCheckbox } from "./components/MuiCheckbox";
 import { MuiSwitch } from "./components/MuiSwitch";
@@ -13,6 +13,7 @@ import { MuiRating } from "./components/MuiRating";
 import { MuiAutocomplete } from "./components/MuiAutocomplete";
 import { MuiLayout } from "./components/MuiLayout";
 import { MuiCards } from "./components/MuiCards";
+import { MuiAccordian } from "./components/MuiAccordian";
 
 function App() {
   return (
@@ -59,6 +60,10 @@ function App() {
 
       {/* Card component - video 18 */}
       <MuiCards />
+      <hr />
+
+      {/* Accordian - (show & hide) - video 19 */}
+      <MuiAccordian />
       <hr />
     </Container>
   );
