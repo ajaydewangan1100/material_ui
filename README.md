@@ -663,8 +663,29 @@ _Components and props to use-_
 </AppBar>
 ```
 
+### Menu - video 22 -
+
+- > [goto - src/components/MuiNavBar.tsx](src/components/MuiNavBar.tsx)
+
+_Components we need -_
+
+1. Menu - (Container of menuitems) - (props)
+   - id - (for target)
+   - anchorEl - (Pass the Element we are targetting)
+   - open - (state as true and false)
+   - MenuListProps - (give button name which is targeting this menu)
+   - onClose - (function on close)
+   - anchorOrigin - (Menu origin)
+   - transformOrigin - (set origin for popuped box)
+
+> [Docs to read about position of menuitem](https://mui.com/material-ui/react-popover/)
+
+2. MenuItem - (Menu items) - (props)
+   - onClick - (pass function for any action like - close)
+
 
 > 
+
 -
 -
 -
