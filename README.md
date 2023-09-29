@@ -683,6 +683,24 @@ _Components we need -_
 2. MenuItem - (Menu items) - (props)
    - onClick - (pass function for any action like - close)
 
+### Link - (To easily customize anchor tag with theme colors and typography styles) - video 23 -
+
+> [goto - src/components/MuiLink.tsx](src/components/MuiLink.tsx)
+
+**Props we can pass -**
+
+    - href - (url)
+    - variant - (same as typography variant)
+    - color - (can use default colors)
+    - underline - "none | hover | always" - (unserline applied)
+    - (we can also use it under typography and can give variant to typography)
+
+```
+<Link href="#" varint="h5" color="secondary" underline="hover">
+    Link - Secondary
+</Link>
+```
+
 
 > 
 
