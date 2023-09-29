@@ -16,6 +16,7 @@ import { MuiCards } from "./components/MuiCards";
 import { MuiAccordian } from "./components/MuiAccordian";
 import { MuiImageList } from "./components/MuiImageList";
 import { MuiNavBar } from "./components/MuiNavBar";
+import { MuiLink } from "./components/MuiLink";
 
 function App() {
   return (
@@ -72,8 +73,12 @@ function App() {
       <MuiImageList />
       <hr />
 
-      {/* NavBar - video 21 */}
+      {/* NavBar - video 21 - 22 */}
       <MuiNavBar />
+      <hr />
+
+      {/* Link (acnhor) - video 23 */}
+      <MuiLink />
       <hr />
     </Container>
   );
