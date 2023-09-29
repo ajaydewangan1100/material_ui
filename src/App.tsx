@@ -15,6 +15,7 @@ import { MuiLayout } from "./components/MuiLayout";
 import { MuiCards } from "./components/MuiCards";
 import { MuiAccordian } from "./components/MuiAccordian";
 import { MuiImageList } from "./components/MuiImageList";
+import { MuiNavBar } from "./components/MuiNavBar";
 
 function App() {
   return (
@@ -69,6 +70,10 @@ function App() {
 
       {/* ImageList - video 20 */}
       <MuiImageList />
+      <hr />
+
+      {/* NavBar - video 21 */}
+      <MuiNavBar />
       <hr />
     </Container>
   );

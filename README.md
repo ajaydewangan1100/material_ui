@@ -629,17 +629,51 @@ _Components_ -
    - onClickCapture={() => alert(item.title)} - (can give method on click)
    - sx - (css)
 
-- -
+### NavBar - (Navigation bar) - video 21
 
-*
-*
-*
-*
-*
-*
-*
-*
-*
+> [goto - src/components/MuiNavBar.tsx](src/components/MuiNavBar.tsx)
+
+_Components and props to use-_
+
+1. AppBar - (container in which position can apply) - (props)
+   - position - static
+2. Toolbar - (Second container )
+3. IconButton - (for logo or icon) - (props)
+   - size - (size)
+   - edge="start | end" - (for icon place)
+   - color="inherit" - (color for icon)
+   - aria-label - (for seect or target)
+
+```
+<AppBar position="static">
+    <Toolbar>
+    <IconButton size="large" edge="start" color="inherit" aria-label="logo">
+        <CatchingPokemonIcon />
+    </IconButton>
+    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        POKEMONAPP
+    </Typography>
+    <Stack direction="row" spacing={2}>
+        <Button color="inherit">Features</Button>
+        <Button color="inherit">Pricing</Button>
+        <Button color="inherit">About</Button>
+        <Button color="inherit">Login</Button>
+    </Stack>
+    </Toolbar>
+</AppBar>
+```
+
+
+> 
+-
+-
+-
+-
+-
+-
+-
+-
+-
 
 # Getting Started with Create React App
 
