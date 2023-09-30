@@ -19,6 +19,7 @@ import { MuiNavBar } from "./components/MuiNavBar";
 import { MuiLink } from "./components/MuiLink";
 import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 import { MuiDrawer } from "./components/MuiDrawer";
+import { MuiSpeedDial } from "./components/MuiSpeedDial";
 
 function App() {
   return (
@@ -89,6 +90,10 @@ function App() {
 
       {/* Drawer - video 25 */}
       <MuiDrawer />
+      <hr />
+
+      {/* Speed Dial - component - video 26 */}
+      <MuiSpeedDial />
       <hr />
     </Container>
   );

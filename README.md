@@ -769,6 +769,50 @@ _Components we need -_
 </Drawer>
 ```
 
+### Speed Dial - (for mobile and tablet - ) - video 26 -
+
+> [goto - src/components/MuiSpeedDial.tsx](src/components/MuiSpeedDial.tsx)
+
+**Components to use -**
+
+1. SpeedDial - (container) - (props)
+
+   - ariaLabel - (for accessibility)
+   - sx - (css properties)
+   - icon - (icon for showing under Speed Dial)
+
+2. SpeedDialAction - (ction to show on when open) - (props)
+
+   - icon - (icon of actions)
+   - tooltipTitle - (title to show on hover)
+   - tooltipOpen - (boolean for tooltip on hover)
+
+3. SpeedDialIcon - (pass as icon) - (porps)
+   - openIcon - (icon to show when open speed dial)
+
+```
+<SpeedDial
+    ariaLabel="Navigation Speed dial"
+    sx={{ position: "absolute", bottom: 16, right: 16 }}
+    icon={<SpeedDialIcon openIcon={<EditIcon />} />}
+>
+<SpeedDialAction icon={<CopyIcon />} tooltipTitle="Copy" tooltipOpen />
+    <SpeedDialAction
+        icon={<PrintIcon />}
+        tooltipTitle="Print"
+        tooltipOpen
+    />
+    <SpeedDialAction
+        icon={<ShareIcon />}
+        tooltipTitle="Share"
+        tooltipOpen
+    />
+</SpeedDial>
+```
+
+
+> 
+
 -
 -
 -
