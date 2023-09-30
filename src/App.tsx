@@ -17,6 +17,7 @@ import { MuiAccordian } from "./components/MuiAccordian";
 import { MuiImageList } from "./components/MuiImageList";
 import { MuiNavBar } from "./components/MuiNavBar";
 import { MuiLink } from "./components/MuiLink";
+import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 
 function App() {
   return (
@@ -79,6 +80,10 @@ function App() {
 
       {/* Link (acnhor) - video 23 */}
       <MuiLink />
+      <hr />
+
+      {/* Breadcrumbs - (Link) - video 24 */}
+      <MuiBreadcrumbs />
       <hr />
     </Container>
   );

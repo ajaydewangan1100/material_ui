@@ -701,8 +701,37 @@ _Components we need -_
 </Link>
 ```
 
+#### Breadcrumbs - (Link) - (Type of secondary navigation scheme that reveals the users location in a website) - video - 24
 
-> 
+> [goto - src/components/MuiBreadcrumbs.tsx](src/components/MuiBreadcrumbs.tsx)
+
+**Props we can use -**
+
+    - aria-label - (for target)
+    - separator - (optional - default - "/") - (can give symbol to separate) - (we can also give icon)
+    - maxItems - (number that tells how much breadcrumbs it will show)
+    - itemsAfterCollapse - (after collapse how much we want to show)
+    - itemsBeforeCollapse - (before collapse how much we want to show)
+
+```
+<Breadcrumbs
+    aria-label="breadcrumbs"
+    separator="-"
+    maxItems={2}
+    itemsBeforeCollapse={2}
+>
+    <Link href="#" underline="hover">
+        Home
+    </Link>
+    <Link href="#" underline="hover">
+        Catalog
+    </Link>
+    <Link href="#" underline="hover">
+        Accessories
+    </Link>
+    <Typography color="text.primary">Shoes</Typography>
+</Breadcrumbs>
+```
 
 -
 -
