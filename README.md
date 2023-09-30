@@ -733,6 +733,42 @@ _Components we need -_
 </Breadcrumbs>
 ```
 
+### Drawer - (used to create sidebar, can contain links to other pages, switch accounts etc ) - video 25 -
+
+> [goto - src/components/MuiDrawer.tsx](src/components/MuiDrawer.tsx)
+
+**Components we need to use -**
+
+1. Drawer - (all drawer things wrapper) - (props)
+
+   - anchor - "left | right | top | bottom" - (position of drawer)
+   - open - (boolean state for open close)
+   - onClose - (function on close)
+
+2. IconButton - (for icon to click)
+
+   - size="large" - (size of icon)
+   - edge="start" - ()
+   - color="inherit"
+   - aria-label="logo"
+   - onClick - (function run when click on icon)
+
+3. MenuItem - (icon used under IconButton) - (props - can give props which used in props)
+
+```
+<Drawer
+    anchor="left"
+    open={isDrawerOpen}
+    onClose={() => setIsDrawerOpen(false)}
+>
+    <Box p={2} width="250px" textAlign="center" role="presentation">
+        <Typography variant="h6" component="div">
+        Side Panel
+        </Typography>
+    </Box>
+</Drawer>
+```
+
 -
 -
 -

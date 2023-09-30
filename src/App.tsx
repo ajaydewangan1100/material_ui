@@ -18,6 +18,7 @@ import { MuiImageList } from "./components/MuiImageList";
 import { MuiNavBar } from "./components/MuiNavBar";
 import { MuiLink } from "./components/MuiLink";
 import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
+import { MuiDrawer } from "./components/MuiDrawer";
 
 function App() {
   return (
@@ -84,6 +85,10 @@ function App() {
 
       {/* Breadcrumbs - (Link) - video 24 */}
       <MuiBreadcrumbs />
+      <hr />
+
+      {/* Drawer - video 25 */}
+      <MuiDrawer />
       <hr />
     </Container>
   );
