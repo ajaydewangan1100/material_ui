@@ -810,10 +810,38 @@ _Components we need -_
 </SpeedDial>
 ```
 
+### Bottom Navigation - (used to switch between primary destination on an application - for mobile and tablet) - video 27 -
 
-> 
+> [goto - src/components/MuiBottomNavigation.tsx](src/components/MuiBottomNavigation.tsx)
 
--
+**Components we need -**
+
+1. BottomNavigation - (Container of actions) - (props)
+
+   - sx - (css)
+   - value - (state value for get)
+   - onChange - (function for control)
+   - showLabels - (boolean - for show text lables of action)
+
+2. BottomNavigationAction - (for action) - (props)
+   - label - (for label text)
+   - icon - (icon for action)
+
+```
+<BottomNavigation
+    sx={{ width: "100%", position: "absolute", bottom: 0 }}
+    value={value}
+    onChange={(event, newValue) => {
+        setValue(newValue);
+    }}
+    showLabels
+>
+    <BottomNavigationAction label="Home" icon={<HomeIcon />} />
+    <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+    <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
+</BottomNavigation>
+```
+
 -
 -
 -
