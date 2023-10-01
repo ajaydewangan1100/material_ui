@@ -188,7 +188,7 @@ _Can give color size according to you_
 > **exclusive** - if we want only one element selectable at a time
 > _but for exclusive we need to chnage state type as - string | null_
 
-### text field - v7
+## text field - v7
 
 > [goto - src/components/MuiTextField.tsx](src/components/MuiTextField.tsx)
 
@@ -205,7 +205,7 @@ _Can give color size according to you_
 
 > go to - [MuiTextField.tsx - for all things](src/components/MuiTextField.tsx)
 
-### Select - video 8
+## Select - video 8
 
 > [goto - src/components/MuiSelect.tsx](src/components/MuiSelect.tsx)
 
@@ -246,7 +246,7 @@ _Can give color size according to you_
 </TextField>
 ```
 
-### Radio Button - video 9
+## Radio Button - video 9
 
 > [goto - src/components/MuiRadioButton.tsx](src/components/MuiRadioButton.tsx)
 
@@ -290,7 +290,7 @@ _Can give color size according to you_
 <FormHelperText>Invalid selection</FormHelperText>
 ```
 
-### checkbox - video 10
+## checkbox - video 10
 
 > [goto - src/components/MuiCheckbox.tsx](src/components/MuiCheckbox.tsx)
 
@@ -325,7 +325,7 @@ _Can give color size according to you_
 />
 ```
 
-### Swtich - video 11
+## Swtich - video 11
 
 > [goto - src/components/MuiSwitch.tsx](src/components/MuiSwitch.tsx)
 
@@ -336,7 +336,7 @@ _Can give color size according to you_
 />
 ```
 
-### Rating - video 12 -
+## Rating - video 12 -
 
 > [goto - src/components/MuiRating.tsx](src/components/MuiRating.tsx)
 
@@ -361,7 +361,7 @@ _Can give color size according to you_
 />
 ```
 
-### Autocmplete - video 13
+## Autocmplete - video 13
 
 > [goto - src/components/MuiAutocomplete.tsx](src/components/MuiAutocomplete.tsx)
 
@@ -381,9 +381,9 @@ _Can give color size according to you_
 />
 ```
 
-### Layout Comp -
+## Layout Comp -
 
-#### Box (Layout Comp) - video 14
+### Box (Layout Comp) - video 14
 
 - > [goto - src/components/MuiLayout.tsx](src/components/MuiLayout.tsx)
 
@@ -425,7 +425,7 @@ css directly used - Box
 </Box>
 ```
 
-#### Use full propeties table for box -
+### Use full propeties table for box -
 
 - > [goto - web - propeties table](https://mui.com/system/properties/#properties-reference-table)
 - > [goto - border](https://mui.com/system/borders/)
@@ -435,7 +435,7 @@ css directly used - Box
 
 _can find all things under same place_
 
-#### Stack (Layout Comp) - video 15 -
+### Stack (Layout Comp) - video 15 -
 
 _Stack is used to manage layout in one dimension - vertical or horizontal - (default - collumn)_
 
@@ -463,11 +463,11 @@ _Stack is used to manage layout in one dimension - vertical or horizontal - (def
 </Stack>
 ```
 
-#### Grid - (Layout Comp) - video 16 -
+### Grid - (Layout Comp) - video 16 -
 
 _usefull when creating 2-dimensional responsive layout_
 
-##### 2 variations -
+#### 2 variations -
 
 1. Grid container - for parent - (container devides into 12 collumns based on that we can give width according to screen) (props ) -
 
@@ -505,7 +505,7 @@ _usefull when creating 2-dimensional responsive layout_
     </Grid>
 ```
 
-#### Paper - (surface layout related component) - video 17 -
+### Paper - (surface layout related component) - video 17 -
 
 **Props we can use -**
 
@@ -519,7 +519,7 @@ _usefull when creating 2-dimensional responsive layout_
 </Paper>
 ```
 
-#### Cards - (For making card) - video - 18 -
+### Cards - (For making card) - video - 18 -
 
 > [goto - src/components/MuiCards.tsx](src/components/MuiCards.tsx)
 
@@ -560,7 +560,7 @@ _usefull when creating 2-dimensional responsive layout_
 </Box>
 ```
 
-#### Accordian - (for show and hide sections of page & can contain any content) - video 19
+### Accordian - (for show and hide sections of page & can contain any content) - video 19
 
 > [goto - src/components/MuiAccordian.tsx](src/components/MuiAccordian.tsx)
 
@@ -600,7 +600,7 @@ _usefull when creating 2-dimensional responsive layout_
 </Accordion>
 ```
 
-#### Imagelist - video 20 -
+### Imagelist - video 20 -
 
 > [goto - src/components/MuiImageList.tsx](src/components/MuiImageList.tsx)
 
@@ -629,7 +629,7 @@ _Components_ -
    - onClickCapture={() => alert(item.title)} - (can give method on click)
    - sx - (css)
 
-### NavBar - (Navigation bar) - video 21
+## NavBar - (Navigation bar) - video 21
 
 > [goto - src/components/MuiNavBar.tsx](src/components/MuiNavBar.tsx)
 
@@ -663,7 +663,7 @@ _Components and props to use-_
 </AppBar>
 ```
 
-### Menu - video 22 -
+## Menu - video 22 -
 
 - > [goto - src/components/MuiNavBar.tsx](src/components/MuiNavBar.tsx)
 
@@ -683,7 +683,7 @@ _Components we need -_
 2. MenuItem - (Menu items) - (props)
    - onClick - (pass function for any action like - close)
 
-### Link - (To easily customize anchor tag with theme colors and typography styles) - video 23 -
+## Link - (To easily customize anchor tag with theme colors and typography styles) - video 23 -
 
 > [goto - src/components/MuiLink.tsx](src/components/MuiLink.tsx)
 
@@ -701,7 +701,7 @@ _Components we need -_
 </Link>
 ```
 
-#### Breadcrumbs - (Link) - (Type of secondary navigation scheme that reveals the users location in a website) - video - 24
+### Breadcrumbs - (Link) - (Type of secondary navigation scheme that reveals the users location in a website) - video - 24
 
 > [goto - src/components/MuiBreadcrumbs.tsx](src/components/MuiBreadcrumbs.tsx)
 
@@ -733,7 +733,7 @@ _Components we need -_
 </Breadcrumbs>
 ```
 
-### Drawer - (used to create sidebar, can contain links to other pages, switch accounts etc ) - video 25 -
+## Drawer - (used to create sidebar, can contain links to other pages, switch accounts etc ) - video 25 -
 
 > [goto - src/components/MuiDrawer.tsx](src/components/MuiDrawer.tsx)
 
@@ -769,7 +769,7 @@ _Components we need -_
 </Drawer>
 ```
 
-### Speed Dial - (for mobile and tablet - ) - video 26 -
+## Speed Dial - (for mobile and tablet - ) - video 26 -
 
 > [goto - src/components/MuiSpeedDial.tsx](src/components/MuiSpeedDial.tsx)
 
@@ -810,7 +810,7 @@ _Components we need -_
 </SpeedDial>
 ```
 
-### Bottom Navigation - (used to switch between primary destination on an application - for mobile and tablet) - video 27 -
+## Bottom Navigation - (used to switch between primary destination on an application - for mobile and tablet) - video 27 -
 
 > [goto - src/components/MuiBottomNavigation.tsx](src/components/MuiBottomNavigation.tsx)
 
@@ -840,6 +840,40 @@ _Components we need -_
     <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
     <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
 </BottomNavigation>
+```
+
+## Data Display components -
+
+### Avatar - video 28 -
+
+> [goto - src/components/MuiAvatar.tsx](src/components/MuiAvatar.tsx)
+
+**Components we need to use -**
+
+1. Avatar - (for avatar) - (props) -
+
+   - sx - (for css)
+   - variant - "circular | rounded | square" - (shape)
+   - src - (if we want to fetch by link)
+   - alt - (alternate text)
+
+2. AvatarGroup - (for grouping avatar) - (props) -
+   - max - (maximum number to show)
+
+```
+<AvatarGroup max={4}>
+    <Avatar
+        src="https://randomuser.me/api/portraits/women/79.jpg"
+        alt="John Doe"
+    />
+    <Avatar
+        src="https://randomuser.me/api/portraits/men/51.jpg"
+        alt="John Doe"
+    />
+    <Avatar sx={{ bgcolor: "primary.light" }}>BW</Avatar>
+    <Avatar sx={{ bgcolor: "success.light" }}>CK</Avatar>
+    <Avatar sx={{ bgcolor: "info.light" }}>AD</Avatar>
+</AvatarGroup>
 ```
 
 -
