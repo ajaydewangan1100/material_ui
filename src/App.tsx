@@ -22,6 +22,7 @@ import { MuiDrawer } from "./components/MuiDrawer";
 import { MuiSpeedDial } from "./components/MuiSpeedDial";
 import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
 import { MuiAvatar } from "./components/MuiAvatar";
+import { MuiBadge } from "./components/MuiBadge";
 
 function App() {
   return (
@@ -98,13 +99,17 @@ function App() {
       <MuiSpeedDial />
       <hr />
 
-      {/* Bottom Navigation */}
+      {/* Bottom Navigation - video 27 */}
       <MuiBottomNavigation />
       <hr />
 
       {/* Data Display Components */}
-      {/* Avatar */}
+      {/* Avatar - video 28 */}
       <MuiAvatar />
+      <hr />
+
+      {/* Badge video 29 */}
+      <MuiBadge />
       <hr />
     </Container>
   );

@@ -876,6 +876,25 @@ _Components we need -_
 </AvatarGroup>
 ```
 
+### Badge - (Generates small badge to the top right of child component ) - video 29 -
+
+> [label](src/components/MuiBadge.tsx)
+
+**Component we need -**
+
+1. Badge - (component for Badge & wrapper for icon if any) - (props)
+   - badgeContent - (number which is showing, eg -> studentList.length)
+   - color - (color of showed number)
+   - max - (when number is bigger than max it will show with "+")
+   - showZero - (boolean - when zero it will show)
+   - invisible - (boolean - to show or hide)
+
+```
+<Badge badgeContent={100} color="secondary" showZero max={999}>
+    <MailIcon />
+</Badge>
+```
+
 -
 -
 -
