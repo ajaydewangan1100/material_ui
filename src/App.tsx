@@ -23,6 +23,7 @@ import { MuiSpeedDial } from "./components/MuiSpeedDial";
 import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
 import { MuiAvatar } from "./components/MuiAvatar";
 import { MuiBadge } from "./components/MuiBadge";
+import { MuiList } from "./components/MuiList";
 
 function App() {
   return (
@@ -110,6 +111,10 @@ function App() {
 
       {/* Badge video 29 */}
       <MuiBadge />
+      <hr />
+
+      {/* List - display data as list - video 30 */}
+      <MuiList />
       <hr />
     </Container>
   );

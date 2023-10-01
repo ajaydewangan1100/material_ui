@@ -895,6 +895,50 @@ _Components we need -_
 </Badge>
 ```
 
+### List - (Display data as a list) - video 30 -
+
+> [label](src/components/MuiList.tsx)
+
+**Components we need -**
+
+1. List - (whole container)
+
+2. ListItem - (list Items under it) - (props) -
+
+   - disablePadding - (boolean - use for alignment)
+
+3. ListItemText - (text which shows) - (props) -
+
+   - primary - (main text of list item)
+   - secondary - (secondary text of list item)
+
+4. ListItemIcon - (if icon cover under it)
+
+5. ListItemAvatar - (if want icon as avatar wrap under it)
+
+6. Avatar - (wrap it under - ListItemAvatar)
+
+7. ListItemButton - (if we want list item as button cover under it)
+
+8. Divider - (divider for list items)
+
+```
+<ListItem disablePadding>
+    <ListItemButton>
+    <ListItemIcon>
+        <ListItemAvatar>
+        <Avatar>
+            <MailIcon />
+        </Avatar>
+        </ListItemAvatar>
+    </ListItemIcon>
+    <ListItemText primary="List item 4 - with Avatar" />
+    </ListItemButton>
+</ListItem>
+<Divider />
+```
+
+
 -
 -
 -
