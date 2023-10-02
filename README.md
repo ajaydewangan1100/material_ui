@@ -964,6 +964,32 @@ _Components we need -_
 />
 ```
 
+### Tooltip - (display inforamtive text when user hover, focus or tap - useful when working with icons) - video 32 -
+
+> [goto - src/components/MuiToolTip.tsx](src/components/MuiToolTip.tsx)
+
+**component to use -**
+
+1. Tooltip - (wrapper) - (props) -
+   - title - (tooltip text)
+   - placement - (where we want to show tooltip)
+   - arrow - (booolean - for little arrow on tooltip)
+   - enterDelay - (delay to show on hover)
+   - leaveDelay - (delay to hide after remove cursor)
+
+```
+<Tooltip
+    title="delete"
+    placement="right-start"
+    arrow
+    enterDelay={500}
+    leaveDelay={200}
+>
+    <IconButton>
+    <DeleteIcon />
+    </IconButton>
+</Tooltip>
+```
 
 -
 -

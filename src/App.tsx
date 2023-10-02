@@ -25,6 +25,7 @@ import { MuiAvatar } from "./components/MuiAvatar";
 import { MuiBadge } from "./components/MuiBadge";
 import { MuiList } from "./components/MuiList";
 import { MuiChip } from "./components/MuiChip";
+import { MuiToolTip } from "./components/MuiToolTip";
 
 function App() {
   return (
@@ -120,6 +121,10 @@ function App() {
 
       {/* Chip - (to enter information, make selection, filter content or trigger actions) - video 31 */}
       {<MuiChip />}
+      <hr />
+
+      {/* Tooltip - video 32 */}
+      <MuiToolTip />
       <hr />
     </Container>
   );
