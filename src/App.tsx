@@ -27,6 +27,7 @@ import { MuiList } from "./components/MuiList";
 import { MuiChip } from "./components/MuiChip";
 import { MuiToolTip } from "./components/MuiToolTip";
 import { MuiTable } from "./components/MuiTable";
+import { MuiAlerts } from "./components/MuiAlerts";
 
 function App() {
   return (
@@ -106,7 +107,10 @@ function App() {
       <hr />
       {/* Table - video 33 */}
       <MuiTable />
+      <hr />
 
+      {/* Alert - video 34 */}
+      <MuiAlerts />
       <hr />
     </Container>
   );

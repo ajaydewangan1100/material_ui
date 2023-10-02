@@ -1022,6 +1022,36 @@ _Components we need -_
 
 - > [goto - src/components/MuiTable.tsx](src/components/MuiTable.tsx)
 
+## Feedback components -
+
+### Alert - (display a short important msg in a way that attracts users attention without interuptingusers task) - video 34 -
+
+> [label](src/components/MuiAlerts.tsx)
+
+**Components need to use -**
+
+1. Alert - (alert component) - (props) -
+
+   - variant - "outlined | filled | standard" - (variant for alert)
+   - severity - "error | warning | info | success" - (type of alert)
+   - icon - (can add different icon in place of default icon)
+   - onClose - (close icon will show & can run method which need to run on close)
+   - action - (can give a button under it and can perform task on click on that)
+
+2. AlertTitle - (can give title for any alert)
+
+```
+<Alert
+    variant="filled"
+    severity="success"
+    icon={<CheckIcon fontSize="inherit" />}
+    action={<Button color="inherit" size='small'>undo</Button>}
+>
+    <AlertTitle>Success - changed icon</AlertTitle>
+    Icon changed - success alert
+</Alert>
+```
+
 -
 -
 -
