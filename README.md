@@ -878,7 +878,7 @@ _Components we need -_
 
 ### Badge - (Generates small badge to the top right of child component ) - video 29 -
 
-> [label](src/components/MuiBadge.tsx)
+> [goto - src/components/MuiBadge.tsx](src/components/MuiBadge.tsx)
 
 **Component we need -**
 
@@ -897,7 +897,7 @@ _Components we need -_
 
 ### List - (Display data as a list) - video 30 -
 
-> [label](src/components/MuiList.tsx)
+> [goto - src/components/MuiList.tsx](src/components/MuiList.tsx)
 
 **Components we need -**
 
@@ -936,6 +936,32 @@ _Components we need -_
     </ListItemButton>
 </ListItem>
 <Divider />
+```
+
+### Chip - (Allow user to enter information, make selection, filter content or trigger actions - like tags on blogpost) - video 31 -
+
+> [goto - src/components/MuiChip.tsx](src/components/MuiChip.tsx)
+
+**Components need to use -**
+
+1. Chip - (for chip) - (props) -
+   - label - (label text)
+   - color - (can give default color)
+   - size - "small | medium"
+   - variant="outlined | filled"
+   - avatar - (can give avatar also under chip)
+   - icon - (can give icon under chip)
+   - onClick - (can run method on click)
+   - onDelete - (a cross icon will come - can perform action on click on cross/delete)
+2. Avatar - (can use avatar under chip)
+
+```
+<Chip
+    label="delete"
+    color="error"
+    onClick={() => alert("Chip clicked")}
+    onDelete={() => alert("Delete handler called")}
+/>
 ```
 
 

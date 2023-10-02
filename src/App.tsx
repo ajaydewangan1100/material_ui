@@ -24,6 +24,7 @@ import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
 import { MuiAvatar } from "./components/MuiAvatar";
 import { MuiBadge } from "./components/MuiBadge";
 import { MuiList } from "./components/MuiList";
+import { MuiChip } from "./components/MuiChip";
 
 function App() {
   return (
@@ -115,6 +116,10 @@ function App() {
 
       {/* List - display data as list - video 30 */}
       <MuiList />
+      <hr />
+
+      {/* Chip - (to enter information, make selection, filter content or trigger actions) - video 31 */}
+      {<MuiChip />}
       <hr />
     </Container>
   );
