@@ -1052,6 +1052,32 @@ _Components we need -_
 </Alert>
 ```
 
+### Snackbar - (provides brief notifications - or toast notifications, it is for inform users of a process that an app has performed or will perfomr, apppear temporarily towords the bottom of screen, they shouldn't interupt user experience and don't require user input to disappear) - video 35 -
+
+> [goto - src/components/MuiSnackbar.tsx](src/components/MuiSnackbar.tsx)
+
+**Components need to use -**
+
+1. Snackbar - (give message or wrap element) - (props) -
+   - message - (msg which will display on Snackbar)
+   - autoHideDuration - (duration to display)
+   - open - (boolean - for control with state)
+   - onClose - (cross button show, and give method to work on close)
+   - anchorOrigin - ({} - where we want to show our Snackbar)
+
+```
+<Snackbar
+    message="form submitted successfully!"
+    autoHideDuration={4000}
+    open={open}
+    onClose={handleClose}
+    anchorOrigin={{
+        vertical: "bottom",
+        horizontal: "center",
+    }}
+></Snackbar>
+```
+
 -
 -
 -

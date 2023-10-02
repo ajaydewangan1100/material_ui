@@ -28,6 +28,7 @@ import { MuiChip } from "./components/MuiChip";
 import { MuiToolTip } from "./components/MuiToolTip";
 import { MuiTable } from "./components/MuiTable";
 import { MuiAlerts } from "./components/MuiAlerts";
+import { MuiSnackbar } from "./components/MuiSnackbar";
 
 function App() {
   return (
@@ -111,6 +112,10 @@ function App() {
 
       {/* Alert - video 34 */}
       <MuiAlerts />
+      <hr />
+
+      {/* Snackbar - toast - video 35 */}
+      <MuiSnackbar />
       <hr />
     </Container>
   );
