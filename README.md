@@ -991,6 +991,37 @@ _Components we need -_
 </Tooltip>
 ```
 
+### Table - (table has display sets of data) - video 33 -
+
+- > [goto - src/components/MuiTable.tsx](src/components/MuiTable.tsx)
+- > [website for generate json data to use under table - mockaroo.com](https://mockaroo.com/)
+
+**Components need to use -**
+
+1. TableContainer - (wrapper for everything) - (props) -
+
+   - component - (pass component for use their properties - like Paper)
+   - sx - (css)
+
+2. Table - (table) - (props) -
+
+   - aria-label - (for accessibility)
+   - stickyHeader - (if height of table is less than data then scrollable)
+
+3. TableHead - (Table heading here)
+
+4. TableBody - (table body here)
+
+5. TableRow - (contain table show)
+
+6. TableCell - (cell for individual data) - (props) -
+
+   - align - "center | inherit | justify | left | right" - (alignment of content)
+
+7. Paper - (passed as component to TableContainer)
+
+- > [goto - src/components/MuiTable.tsx](src/components/MuiTable.tsx)
+
 -
 -
 -
