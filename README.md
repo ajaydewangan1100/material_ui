@@ -1078,6 +1078,52 @@ _Components we need -_
 ></Snackbar>
 ```
 
+### Dialog - (type of model that appears infront of a application content to present important information or ask for add a session, it disbles all app functionality when appear and remain on screen until confirm or dismissed ) - video 36 -
+
+> [goto - src/components/MuiDialog.tsx](src/components/MuiDialog.tsx)
+
+**components need to use -**
+
+1. Dialog - (wrapper for whole dialog) - (props) -
+
+   - open - (boolean for open dialog using state)
+   - onClose - (method to work on close)
+   - aria-labelledby - (targetted by title of dialog)
+   - aria-describedby - (targetted by content of dialog)
+
+2. DialogTitle - (title of dialog) - (props) -
+
+   - id - (for target)
+
+3. DialogContent - (wrapper for ContentText of dialog) - (props)
+
+4. DialogContentText - (content of dialog) - (props) -
+
+   - id - (for target)
+
+5. DialogActions - (wrapper for buttons which show under dialog, after dialog open)
+
+```
+<Dialog
+    open={open}
+    onClose={() => setOpen(false)}
+    aria-labelledby="dialog-title"
+    aria-describedby="dialog-description"
+>
+<DialogTitle id="dialog-title">Submit the test?</DialogTitle>
+<DialogContent>
+    <DialogContentText id="dialog-description">
+    Are you sure you want to submit the test? You will not be able to
+    edit after submitting.
+    </DialogContentText>
+</DialogContent>
+<DialogActions>
+    <Button onClick={() => setOpen(false)}>Cancel</Button>
+    <Button onClick={() => setOpen(false)} autoFocus>Submit</Button>
+</DialogActions>
+</Dialog>
+```
+
 -
 -
 -

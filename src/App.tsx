@@ -29,6 +29,7 @@ import { MuiToolTip } from "./components/MuiToolTip";
 import { MuiTable } from "./components/MuiTable";
 import { MuiAlerts } from "./components/MuiAlerts";
 import { MuiSnackbar } from "./components/MuiSnackbar";
+import { MuiDialog } from "./components/MuiDialog";
 
 function App() {
   return (
@@ -116,6 +117,10 @@ function App() {
 
       {/* Snackbar - toast - video 35 */}
       <MuiSnackbar />
+      <hr />
+
+      {/* Dialog - confirmation box - video 36 */}
+      <MuiDialog />
       <hr />
     </Container>
   );
