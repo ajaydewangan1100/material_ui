@@ -1153,6 +1153,30 @@ _Components we need -_
 </Stack>
 ```
 
+### Skeleton - video 38 -
+
+`Used to disply placeholder preview of the content before data gets loaded`
+
+> [goto - src/components/MuiSkeleton.tsx](src/components/MuiSkeleton.tsx)
+
+**Component need to use -**
+
+1. Skeleton - (skeleton is simple Component) - (props) -
+   - variant - "text | circular | rounded | rectangular" - (for different shape skeleton)
+   - animation - "wave | pulse" or false - (animation on skeleton)
+   - width - (skeleton width)
+   - height - (skeleton height)
+
+```
+<Skeleton
+    variant="rectangular"
+    width={250}
+    height={110}
+    animation="pulse"
+/>
+```
+
+
 -
 -
 -

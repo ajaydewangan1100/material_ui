@@ -31,6 +31,7 @@ import { MuiAlerts } from "./components/MuiAlerts";
 import { MuiSnackbar } from "./components/MuiSnackbar";
 import { MuiDialog } from "./components/MuiDialog";
 import { MuiProgress } from "./components/MuiProgress";
+import { MuiSkeleton } from "./components/MuiSkeleton";
 
 function App() {
   return (
@@ -126,6 +127,10 @@ function App() {
 
       {/* Progress - video 37 */}
       <MuiProgress />
+      <hr />
+
+      {/* Skeleton - video 38 */}
+      <MuiSkeleton />
       <hr />
     </Container>
   );
