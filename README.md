@@ -1124,6 +1124,35 @@ _Components we need -_
 </Dialog>
 ```
 
+### Progress - video 37 -
+
+`Inform users what is the status of ongoing process - like loading app, submitting form, saving updates`
+
+> [goto - src/components/MuiProgress.tsx](src/components/MuiProgress.tsx)
+
+**Components need to use -**
+
+1. CircularProgress - (for circular) - (props) -
+
+   - color - (can use colors, default colors)
+   - variant - "deteminate | interminate" - (determinate- for stop according to percentage)
+
+2. LinearProgress - (for linear) - (props) -
+   - color - (can use colors, default colors)
+   - variant - "deteminate | interminate | buffer | query" - (query - use case like retrivieng data)
+
+```
+<Stack spacing={2}>
+    <CircularProgress />
+    <CircularProgress color="error" />
+    <CircularProgress variant="determinate" value={70} />
+
+    <LinearProgress />
+    <LinearProgress color="error" />
+    <LinearProgress variant="determinate" value={70} />
+</Stack>
+```
+
 -
 -
 -

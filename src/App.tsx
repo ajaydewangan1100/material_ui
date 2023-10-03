@@ -30,6 +30,7 @@ import { MuiTable } from "./components/MuiTable";
 import { MuiAlerts } from "./components/MuiAlerts";
 import { MuiSnackbar } from "./components/MuiSnackbar";
 import { MuiDialog } from "./components/MuiDialog";
+import { MuiProgress } from "./components/MuiProgress";
 
 function App() {
   return (
@@ -121,6 +122,10 @@ function App() {
 
       {/* Dialog - confirmation box - video 36 */}
       <MuiDialog />
+      <hr />
+
+      {/* Progress - video 37 */}
+      <MuiProgress />
       <hr />
     </Container>
   );
