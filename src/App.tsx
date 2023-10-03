@@ -32,6 +32,7 @@ import { MuiSnackbar } from "./components/MuiSnackbar";
 import { MuiDialog } from "./components/MuiDialog";
 import { MuiProgress } from "./components/MuiProgress";
 import { MuiSkeleton } from "./components/MuiSkeleton";
+import { MuiLoadingButton } from "./components/MuiLoadingButton";
 
 function App() {
   return (
@@ -131,6 +132,11 @@ function App() {
 
       {/* Skeleton - video 38 */}
       <MuiSkeleton />
+      <hr />
+
+      {/* Components of Material Lab Package */}
+      {/* Loading Button - video 39 */}
+      <MuiLoadingButton />
       <hr />
     </Container>
   );

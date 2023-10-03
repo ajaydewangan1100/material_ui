@@ -1176,6 +1176,34 @@ _Components we need -_
 />
 ```
 
+## Components of Material Lab Package -
+
+`It contains packages that are still under development and might need bit of work for their part of the core package, however they are at a stage where we can start using them`
+
+_for use that Components need to install Lab Package_
+
+> `npm i @mui/lab`
+
+### Loading Button - video 39 -
+
+`Same ad button but we can present it as loading`
+
+> [goto - src/components/MuiLoadingButton.tsx](src/components/MuiLoadingButton.tsx)
+
+**Component need to use -** - from @mui/lab
+
+1. LoadingButton - (same as button we can use) - (props) -
+   - variant - "contained | outlined | text" - (button variant)
+   - loading - (boolean - for show as progressing)
+   - loadingIndicator - (text if we want to show as task running)
+   - startIcon - (can give icon under button)
+   - loadingPosition - "start | end | center" - (icon position under button )
+
+```
+<LoadingButton variant="outlined" loading loadingIndicator="Loading...">
+    Fetch Data
+</LoadingButton>
+```
 
 -
 -
