@@ -1205,6 +1205,41 @@ _for use that Components need to install Lab Package_
 </LoadingButton>
 ```
 
+### Date & Time Picker - video 40 -
+
+`for this need to install Date library and Date adapter`
+
+> [goto - src/components/MuiPicker.tsx](src/components/MuiPicker.tsx)
+
+`Note - *some packeges added and library imported on app*`
+
+> [goto - src/App.tsx](src/App.tsx)
+
+**Components need to use -**
+
+1. DatePicker - (for Date only) - (props) -
+
+   - label - (for targetting)
+   - value - (update via state)
+   - onChnage - (set state on change)
+
+2. TimePicker - (for Time only) - (props) -
+   - label - (for targetting)
+   - value - (update via state)
+   - onChnage - (set state on change)
+3. DateTimePicker - (for Date And Time both) - (props) -
+   - label - (for targetting)
+   - value - (update via state)
+   - onChnage - (set state on change)
+
+```
+<DateTimePicker
+    label="Date & Time Picker"
+    value={selectedDateTime}
+    onChange={(newValue) => setSelectedDateTime(newValue)}
+/>
+```
+
 -
 -
 -
