@@ -1363,6 +1363,41 @@ _for use that Components need to install Lab Package_
 </Timeline>
 ```
 
+### Masonry - vidoe 44 -
+
+`Masonry - maintain a list of content blogs with a consistent width but different height , contents are ordered by row, `
+
+> [goto - src/components/MuiMasonry.tsx](src/components/MuiMasonry.tsx)
+
+**Components need to use -**
+
+1. Masonry - (from @mui/lab) - (container for all masonry things) - (props) -
+
+   - columns - (define number of columns)
+   - spacing - (space between columns)
+
+2. can use any component of different sizes with - 'sx'
+
+```
+<Masonry columns={4} spacing={1}>
+    {heights.map((height, index) => (
+        <Paper
+            key={index}
+            sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height,
+            border: "1px solid",
+            bgcolor: `#${index}${index}${index}`,
+            }}
+        >
+            {index + 1}
+        </Paper>
+    ))}
+</Masonry>
+```
+
 -
 -
 -
