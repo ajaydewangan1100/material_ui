@@ -40,6 +40,7 @@ import { MuiLoadingButton } from "./components/MuiLoadingButton";
 import { MuiPicker } from "./components/MuiPicker";
 import { MuiDateRangePicker } from "./components/MuiDateRangePicker";
 import { MuiTabs } from "./components/MuiTabs";
+import { MuiTimeline } from "./components/MuiTimeline";
 
 function App() {
   return (
@@ -157,6 +158,10 @@ function App() {
 
         {/* Tabs - video 42 */}
         <MuiTabs />
+        <hr />
+
+        {/* Timeline - video 43 */}
+        <MuiTimeline />
         <hr />
       </Container>
     </LocalizationProvider>

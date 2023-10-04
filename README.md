@@ -1320,6 +1320,49 @@ _for use that Components need to install Lab Package_
 </TabContext>
 ```
 
+### Timeline - video 43 -
+
+`Timeline component is used to display an list of event and chronological order`
+
+> [label](src/components/MuiTimeline.tsx)
+
+**Components need to use -**
+
+1. Timeline - (contianer for timeline) - (props) -
+
+   - position - "right | left | alternate | alternate-reverse" - (text position)
+
+2. TimelineItem - (for wrap things related to one timeline)
+
+3. TimelineOppositeContent - (if want other content on opposite side of text on timeline) - (props) -
+
+   - color - (can use any color and default also)
+
+4. TimelineSeparator - (separator for dot, connector and content)
+
+5. TimelineDot - (timeline dot) - (props) -
+
+   - variant - "outline | filled" - (varint of dot)
+   - color - (color of dot)
+
+6. TimelineConnector - (connector line)
+
+7. TimelineContent - (content to show)
+
+```
+<Timeline>
+    <TimelineItem>
+    <TimelineOppositeContent color="text.primary">
+        12:30 PM
+    </TimelineOppositeContent>
+    <TimelineSeparator>
+        <TimelineDot variant="filled" color="secondary" />
+    </TimelineSeparator>
+    <TimelineContent>City C</TimelineContent>
+    </TimelineItem>
+</Timeline>
+```
+
 -
 -
 -
