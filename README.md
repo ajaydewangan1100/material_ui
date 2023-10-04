@@ -1398,6 +1398,33 @@ _for use that Components need to install Lab Package_
 </Masonry>
 ```
 
+## Responsive - video 45 -
+
+> [goto - src/components/MuiResponsive.tsx](src/components/MuiResponsive.tsx)
+
+`Can give breakpoints of width under sx`
+
+- [Stack responsive - DOCS](https://mui.com/material-ui/react-stack/#responsive-values)
+- [Grid responsive - DOCS](https://mui.com/material-ui/react-grid/#grid-with-multiple-breakpoints)
+
+_Note - also read DOCS of other under Layout_
+
+```
+<Box
+    sx={{
+    height: "300px",
+    width: {
+        xs: 100, // above 0
+        sm: 200, // above 600px
+        md: 300, // above 900px
+        lg: 400, // above 1200px
+        xl: 500, // above 1536px
+    },
+    bgcolor: "primary.main",
+    }}
+></Box>
+```
+
 -
 -
 -
