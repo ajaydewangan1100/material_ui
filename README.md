@@ -1240,6 +1240,28 @@ _for use that Components need to install Lab Package_
 />
 ```
 
+### Date Range Picker - video 41 -
+
+- > [goto - DOCS](https://mui.com/x/react-date-pickers/base-concepts/)
+- > [goto - src/components/MuiDateRangePicker.tsx](src/components/MuiDateRangePicker.tsx)
+
+**Components need to use -**
+
+1. DateRangePicker - (install - `@mui/x-date-pickers-pro`, from npm) - (Date Range picker) - (props) -
+   - localeText - ({start: 'Start date picker label', end: 'End date picker label'})
+   - value - (state value)
+   - onChnage - (method run on change)
+
+```
+<DateRangePicker
+    localeText={{ start: "Check-in", end: "Check-out" }}
+    value={value}
+    onChange={(newValue: SetStateAction<DateRange<Date>>) => {
+        setValue(newValue);
+    }}
+/>
+```
+
 -
 -
 -
