@@ -1262,6 +1262,64 @@ _for use that Components need to install Lab Package_
 />
 ```
 
+### Tabs - video 42 -
+
+`we can make Tabs using core mui library also, but with lab it is easier - Tabs make it easy to explore and switch between different views`
+
+> [goto - src/components/MuiTabs.tsx](src/components/MuiTabs.tsx)
+
+**Components we need to use -**
+
+1. TabContext - (container) - (props) -
+
+   - value - (state value)
+
+2. TabList - (wrapper for all tabs) - (props) -
+
+   - aria-label - (for accessibility)
+   - centered - (boolean - for centering tab list )
+   - onChange - (run on change)
+   - textColor - (can use default colors for tabtext)
+   - indicatorColor - (can use default colors for underline indicator)
+   - variant - "fullwidth | scrollable | standard" - (for scrollable and other varint)
+   - scrollButtons - "auto - (for scrollbuttons)
+
+3. TabPanel - (open based on value) - (props) -
+
+   - value - (same value as given in Tab)
+
+4. Tab - (from - @mui/lab) - (for create tab) - (props) -
+   - label - (label to show)
+   - value - (value to use on TabPanel)
+   - icon - (is we want icon)
+   - disabled - (boolean- for disable tab)
+
+```
+<TabContext value={value}>
+    <Box sx={{ borderBottom: 1, borderColor: "divider", width: "400px" }}>
+        <TabList
+        aria-label="Tabs example"
+        onChange={handlechange}
+        textColor="secondary"
+        indicatorColor="primary"
+        centered
+        >
+        <Tab label="" value="1" icon={<FavoriteIcon />} />
+        <Tab label="Tab 2" value="2" icon={<FavoriteIcon />} disabled />
+        <Tab
+            label="Tab 3"
+            value="3"
+            icon={<FavoriteIcon />}
+            iconPosition="start"
+        />
+        </TabList>
+    </Box>
+    <TabPanel value="1">Panel one</TabPanel>
+    <TabPanel value="2">Panel two</TabPanel>
+    <TabPanel value="3">Panel three</TabPanel>
+</TabContext>
+```
+
 -
 -
 -
